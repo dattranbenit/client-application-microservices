@@ -4,7 +4,7 @@ import {refreshAccessToken} from "./security/authentication";
 
 const api = axios.create({
     baseURL: SERVER.resource_uri,
-    timeout: 1 * 60 * 1000
+    timeout: 1 * 60 * 1000 //timeout to execute each (request & response)
 });
 
 // Request interceptor for API calls
