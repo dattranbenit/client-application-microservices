@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {addAccount} from "../../redux/actions";
 import {connect} from "react-redux";
-import { withRouter, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 function AddAccount(props) {
     let history = useHistory()
@@ -87,4 +87,4 @@ const mapDispatchToProps = {
     addAccount,
 };
 
-export default withRouter(connect(null, mapDispatchToProps)(AddAccount));
+export default connect(null, mapDispatchToProps)(AddAccount);

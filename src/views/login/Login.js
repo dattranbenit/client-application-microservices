@@ -20,9 +20,6 @@ function Login(props) {
             await getUser(token)
             history.push('/')
         }
-        // await getUser(token)
-        // loginUser()
-        // props.history.push('/')
     }, [])
 
     return (

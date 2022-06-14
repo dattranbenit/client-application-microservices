@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useHistory, withRouter} from "react-router-dom";
+import { Link, useHistory} from "react-router-dom";
 import { getAccounts, deleteAccount } from "../../redux/actions";
 import { connect } from "react-redux";
 
@@ -66,4 +66,4 @@ const mapDispatchToProps = {
     deleteAccount,
 };
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Accounts));
+export default connect(mapStateToProps, mapDispatchToProps)(Accounts);
