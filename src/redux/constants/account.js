@@ -1,0 +1,6 @@
+export const AccountTypes = {
+  GET_ACCOUNTS: 'api/GET_ACCOUNTS',
+  ADD_ACCOUNT: 'api/ADD_ACCOUNT',
+  UPDATE_ACCOUNT: 'api/UPDATE_ACCOUNT',
+  DELETE_ACCOUNT: 'api/DELETE_ACCOUNT',
+}
